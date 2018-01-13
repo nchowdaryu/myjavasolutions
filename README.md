@@ -60,3 +60,13 @@ Example Output:
 //***Key Assumptions:
 -> #Section Data may or maynot be in same order, they can be shuffled.
 -> Input shall be given through a input file path as an argument while running this java program otherwise it can take the one loaded in resources folder path..
+-> Code has some additional output before actual required output used it as a Log reporting purpose
+
+
+Solution Approach: Used a Java programming language.
+->As a first step Read input content parse through it and validate the formats as per requirements and create domain objects.
+->Use the DijkstraAlgorithm and generate required optimum route & time details through a service class
+->Format the path as per requirements and print the output.
+
+
+Tests conducted: Ran the program through some negative scenarios data and valid data files
