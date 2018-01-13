@@ -29,12 +29,15 @@ public class AirportBaggageRoutingMainProgram {
 	public static void main(String[] args) {
 		// Key Assumption: Input content is available through some text file object path can be provided via input arguments or taking some default one as per requirements.
 		//Step1:Read the input file.
-		File inputDataFile = null;
-		System.out.println("Input argument file path as per requirements:"+args[0]);
-		if(null==args[0]){
-			inputDataFile=new File(AirportBaggageRoutingConstants.INPUT_DATA_FILE_PATH);
-		}else{
+		int argsLength = args.length;
+		File inputDataFile = null;		
+		System.out.println("No.of input arguments:"+argsLength);
+		if(argsLength==1){
+			System.out.println("Input argument file path as per requirements:"+args[0]);
 			inputDataFile=new File(args[0]);
+			
+		}else{ //Take from project path.
+			inputDataFile=new File(AirportBaggageRoutingConstants.INPUT_DATA_FILE_PATH);
 		}
 
 		if(inputDataFile.exists() && inputDataFile.length() > 0){
