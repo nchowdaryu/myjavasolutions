@@ -1,0 +1,31 @@
+/*
+*A Bi Directional Edge between two Nodes in Conveyor System with Time to travel between them.
+*/
+package app.company.project.airportbaggagerouting.entity;
+
+public class BiDirectionalEdge {
+	
+	private final AirportGateNode sourceNode;
+    private final AirportGateNode destinationNode;
+    private final int time;
+    
+    
+	public BiDirectionalEdge(AirportGateNode sourceNode, AirportGateNode destinationNode, int time) {
+		super();
+		this.sourceNode = sourceNode;
+		this.destinationNode = destinationNode;
+		this.time = time;
+	}
+	public AirportGateNode getSourceNode() {
+		return sourceNode;
+	}
+	public AirportGateNode getDestinationNode() {
+		return destinationNode;
+	}
+	public int getTime() {
+		return time;
+	}
+    
+    
+
+}
