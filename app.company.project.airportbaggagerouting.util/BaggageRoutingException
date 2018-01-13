@@ -1,0 +1,20 @@
+/* Custom Exception class for this functionality */
+
+package app.company.project.airportbaggagerouting.util;
+
+public class BaggageRoutingException extends Exception {
+
+	private static final long serialVersionUID = 1L;
+	
+	private int errorCode = 0;
+	
+	public BaggageRoutingException(String customErrorMessage, int customErrorCode){
+		super(customErrorMessage);
+		this.errorCode = customErrorCode;
+	}
+	
+	public int getErrorCode() {
+		return errorCode;
+	}
+
+}
